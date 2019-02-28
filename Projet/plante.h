@@ -1,0 +1,12 @@
+int listecategorie();
+int accueil();
+int maplante();
+int plantetype1();
+int plantetype2();
+int plantetype3();
+int plante1();
+int plante2();
+int plante3();
+int plante4();
+int plante5();
+int plante6();

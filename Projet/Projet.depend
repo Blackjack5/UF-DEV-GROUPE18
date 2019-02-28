@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1550917066 source:c:\users\loic\desktop\projet de ma vie\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
+1550921156 c:\users\loic\desktop\projet de ma vie\plante.h
+
+1550921183 source:c:\users\loic\desktop\projet de ma vie\plante.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
+1550923742 source:c:\users\loic\desktop\projet de ma vie\projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
+1550999881 c:\users\loic\desktop\projet de ma vie\projet\plante.h
+
+1550999883 source:c:\users\loic\desktop\projet de ma vie\projet\plante.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
+1550923742 source:c:\users\manci\downloads\projet\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
+1550999881 c:\users\manci\downloads\projet\plante.h
+
+1551171489 source:c:\users\manci\downloads\projet\plante.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"plante.h"
+
