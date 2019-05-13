@@ -1,0 +1,51 @@
+
+create table informations
+(id_information integer not null,
+humidite_plante number(3) not null,
+temperature_plante number(2) not null,
+constraint pkinfo primary key (id_information));
+
+create table famille
+(id_famille integer not null,
+nom_famille varchar2(10) not null,
+constraint pkfami primary key (id_famille));
+
+create table utilisateur
+(id_utilisateur integer not null,
+nom_utilisateur varchar2(10) not null,
+prenom_utilisateur varchar2(10) not null,
+constraint pkuti primary key (id_utilisateur));
+
+create table plantes_utilisateur
+(id_plante_utilisateur integer not null,
+nom_plante_utilisateur varchar2(10) not null,
+id_utilisateur integer not null,
+constraint pkplauti primary key (id_plante_utilisateur),
+constraint fk1 foreign key (id_utilisateur) references utilisateur (id_utilisateur));
+
+create table possede
+(id_famille integer not null,
+id_plante_utilisateur integer not null,
+id_information integer not null,
+constraint pkposs primary key (id_famille,id_plante_utilisateur,id_information));
+
+create table plante
+(id_plante integer not null,
+nom_plante varchar2(10) not null,
+description_plante varchar2(100) not null,
+humidite_plante number(2) not null,
+temperature_plante number(2) not null,
+luminosite_plante varchar(15) not null,
+floraison_plante varchar(20) not null,
+id_famille integer not null,
+constraint pk primary key (id_plante),
+constraint fk foreign key (id_famille) references famille (id_famille));
+
+create table recherche
+(id_utilisateur integer not null,
+id_plante integer not null,
+constraint pkrech primary key (id_utilisateur,id_plante));
+
+select * from plantes_utilisateur;
+
+select * from plante;
